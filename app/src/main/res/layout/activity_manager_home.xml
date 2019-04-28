@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.arunika.arlingtonauto.controller.ManagerHomeActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="280dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginBottom="36dp"
+        android:text="Manager Home"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editOwnProfileBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/editOwnProfileBtn"
+        android:layout_width="257dp"
+        android:layout_height="92dp"
+        android:layout_marginBottom="14dp"
+        android:onClick="editOwnProfile"
+        android:text="Edit Own Profile"
+        app:layout_constraintBottom_toTopOf="@id/editAnotherProfileBtn3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/viewAllRRBtn"
+        android:layout_width="238dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="14dp"
+        android:onClick="viewAllRR"
+        android:text="Search Reservations"
+        app:layout_constraintBottom_toTopOf="@+id/viewAvailableCarsBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editAnotherProfileBtn3" />
+
+    <Button
+        android:id="@+id/viewAvailableCarsBtn"
+        android:layout_width="249dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="21dp"
+        android:onClick="viewAllAvailableCars"
+        android:text="View All Available Cars"
+        app:layout_constraintBottom_toTopOf="@+id/logoutBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewAllRRBtn" />
+
+    <Button
+        android:id="@+id/editAnotherProfileBtn3"
+        android:layout_width="234dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="14dp"
+        android:onClick="editAnotherUser"
+        android:text="Search User"
+        app:layout_constraintBottom_toTopOf="@+id/revokeRenterBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editOwnProfileBtn" />
+
+    <Button
+        android:id="@+id/logoutBtn"
+        android:layout_width="238dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="132dp"
+        android:onClick="logout"
+        android:text="Logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewAvailableCarsBtn" />
+
+</android.support.constraint.ConstraintLayout>

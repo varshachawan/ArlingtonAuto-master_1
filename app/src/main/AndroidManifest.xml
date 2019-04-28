@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.arunika.arlingtonauto">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.arunika.arlingtonauto.controller.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.arunika.arlingtonauto.controller.RegistrationActivity" />
+        <activity android:name="com.arunika.arlingtonauto.controller.CustomerHomeActivity" />
+        <activity android:name="com.arunika.arlingtonauto.controller.ManagerHomeActivity" />
+        <activity android:name="com.arunika.arlingtonauto.controller.AdminHomeActivity" />
+        <activity android:name="com.arunika.arlingtonauto.controller.RevokeRenterActivity" />
+        <activity android:name="com.arunika.arlingtonauto.controller.UpdateProfileActivity" />
+        <activity android:name="com.arunika.arlingtonauto.controller.SystemUserActivity" />
+        <activity android:name="com.arunika.arlingtonauto.controller.FindUserProfileActivity" />
+        <activity android:name="com.arunika.arlingtonauto.controller.EditAnotherUserActivity" />
+        <activity android:name="com.arunika.arlingtonauto.controller.RequestRentalActivity" />
+        <activity android:name="com.arunika.arlingtonauto.controller.ReserveRentalActivity" />
+        <activity android:name="com.arunika.arlingtonauto.controller.ConfirmRentalActivity" />
+        <activity android:name="com.arunika.arlingtonauto.controller.SummaryRentalActivity" />
+        <activity android:name="com.arunika.arlingtonauto.controller.FindMyRRActivity" />
+        <activity android:name="com.arunika.arlingtonauto.controller.ViewMyRRActivity" />
+        <activity android:name="com.arunika.arlingtonauto.controller.FindAllRRActivity" />
+        <activity android:name="com.arunika.arlingtonauto.controller.ViewAllRRActivity" />
+        <activity android:name="com.arunika.arlingtonauto.controller.FindAllAvailableCarsActivity" />
+        <activity android:name="com.arunika.arlingtonauto.controller.ViewAllAvailableCarsActivity" />
+        <activity android:name="com.arunika.arlingtonauto.controller.ViewRRDetailsActivity" />
+        <activity android:name="com.arunika.arlingtonauto.controller.RevokeeActivity" />
+    </application>
+</manifest>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.arunika.arlingtonauto.controller.ConfirmRentalActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="17dp"
+        android:text="Reserve Parking Spot"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/carName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/confirmBtn"
+        android:layout_width="162dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="15dp"
+        android:onClick="onConfirm"
+        android:text="Confirm"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="16dp"
+        android:text="Parking Area Name:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView12"
+        app:layout_constraintEnd_toStartOf="@+id/carName"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/carName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="11dp"
+        android:text="Maserati"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/capacity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/capacity"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="15dp"
+        android:text="2"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/checkOut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/carName" />
+
+    <TextView
+        android:id="@+id/checkOut"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="12dp"
+        android:text="10/30/2018 11:00am"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/returnBy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/capacity" />
+
+    <TextView
+        android:id="@+id/returnBy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="33dp"
+        android:text="11/02/2018 05:00pm"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/gpsRate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/checkOut" />
+
+    <TextView
+        android:id="@+id/totalPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="28dp"
+        android:text="$560.99"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/confirmBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/siriusRate" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="15dp"
+        android:text="Parking Capacity:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView13"
+        app:layout_constraintEnd_toStartOf="@+id/capacity"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="155dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="60dp"
+        android:text="Check-Out By:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView15"
+        app:layout_constraintEnd_toStartOf="@+id/checkOut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="46dp"
+        android:text="Return By:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/returnBy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="33dp"
+        android:text="Total Price:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/confirmBtn"
+        app:layout_constraintEnd_toStartOf="@+id/totalPrice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="124dp"
+        android:text="Options"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView16"
+        app:layout_constraintEnd_toStartOf="@+id/onstarBox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <CheckBox
+        android:id="@+id/gpsBox"
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="154dp"
+        android:layout_marginEnd="9dp"
+        android:checked="false"
+        android:onClick="onCheckBoxClicked"
+        android:text="Cart"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/onstarRate"
+        app:layout_constraintEnd_toStartOf="@+id/onstarRate"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/onstarBox"
+        android:layout_width="88dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="4dp"
+        android:checked="false"
+        android:onClick="onCheckBoxClicked"
+        android:text="Camera"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/gpsRate"
+        app:layout_constraintEnd_toStartOf="@+id/gpsRate"
+        app:layout_constraintStart_toEndOf="@+id/textView15" />
+
+    <CheckBox
+        android:id="@+id/siriusBox"
+        android:layout_width="99dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="154dp"
+        android:layout_marginEnd="9dp"
+        android:onClick="onCheckBoxClicked"
+        android:text="History"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/siriusRate"
+        app:layout_constraintEnd_toStartOf="@+id/siriusRate"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/gpsRate"
+        android:layout_width="84dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="18dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/onstarRate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/onstarBox"
+        app:layout_constraintTop_toBottomOf="@+id/returnBy" />
+
+    <TextView
+        android:id="@+id/onstarRate"
+        android:layout_width="81dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="23dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/siriusRate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/gpsBox"
+        app:layout_constraintTop_toBottomOf="@+id/gpsRate" />
+
+    <TextView
+        android:id="@+id/siriusRate"
+        android:layout_width="93dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="21dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/totalPrice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/siriusBox"
+        app:layout_constraintTop_toBottomOf="@+id/onstarRate" />
+
+
+</android.support.constraint.ConstraintLayout>

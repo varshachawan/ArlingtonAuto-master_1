@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.arunika.arlingtonauto.controller.CustomerHomeActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="38dp"
+        android:text="User Home"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editOwnProfileBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <Button
+        android:id="@+id/editOwnProfileBtn"
+        android:layout_width="241dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="12dp"
+        android:onClick="editOwnProfile"
+        android:text="Edit Profile"
+        app:layout_constraintBottom_toTopOf="@+id/requestRentalBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <Button
+        android:id="@+id/requestRentalBtn"
+        android:layout_width="234dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="requestRental"
+        android:text="New Reservation"
+        app:layout_constraintBottom_toTopOf="@+id/viewMyRRBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editOwnProfileBtn" />
+
+    <Button
+        android:id="@+id/viewMyRRBtn"
+        android:layout_width="239dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="21dp"
+        android:onClick="viewMyRR"
+        android:text="View My Reservations"
+        app:layout_constraintBottom_toTopOf="@+id/viewMyNSV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/requestRentalBtn" />
+
+    <Button
+        android:id="@+id/viewMyNSV"
+        android:layout_width="239dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="21dp"
+        android:onClick="viewMyNSV"
+        android:text="View No Show and Voilations"
+        app:layout_constraintBottom_toTopOf="@+id/logoutBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewMyRRBtn" />
+
+
+
+    <Button
+        android:id="@+id/logoutBtn"
+        android:layout_width="155dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="132dp"
+        android:onClick="logout"
+        android:text="Logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewMyNSV" />
+
+</android.support.constraint.ConstraintLayout>
